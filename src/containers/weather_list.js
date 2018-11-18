@@ -12,9 +12,9 @@ renderWeather=(cityData)=>{
     return(
         <tr key= {name}>
             <td>{name}</td>
-            <td> 
-                <Chart data={temp} color= 'orange'/>
-            </td>
+            <td> <Chart data={temp} color= 'orange'/></td>
+            <td> <Chart data={pressure} color= 'blue'/></td>
+            <td><Chart data={humidity} color= 'green'/></td>
         </tr>
     )
 
